@@ -1,0 +1,4 @@
+{% extends 'base.html' %} {% block title %} {% endblock %} {% block content %}
+{% if error is defined %}
+<p>{{error}}</p>
+{% else %} {{opinions|safe}} {% endif %} {% endblock %}
